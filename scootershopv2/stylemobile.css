@@ -1,0 +1,157 @@
+/* STYLING */
+#pagewrap {
+    background-color: #4B61DB;
+}
+
+header {
+    background-color: orange;
+}
+
+.banner {
+    background-color: red;
+}
+
+.selvbetjening {
+    background-color: white;
+}
+
+.navigation {
+    background-color: green;
+}
+
+.navigationleft {
+    background-color: brown;
+}
+
+.nyheder {
+    background-color: pink;
+}
+
+.top3 {
+    background-color: darkgrey;
+}
+
+footer {
+    background-color: purple;
+}
+/* STYLING */
+
+
+/* DISPLAY NONE */
+.banner {
+    display: none;
+}
+
+.navigationleft {
+    display: none;
+}
+/* DISPLAY NONE */
+
+
+/* GRID OG BREAKPOINT FOR "PAGEWRAP" I MOBILE */
+/* GRID AREA */
+header {
+    grid-area: header;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.selvbetjening {
+    grid-area: selvbetjening;
+}
+
+.navigation {
+    grid-area: menu;
+}
+
+.navigationleft {
+    grid-area: menuleft;
+}
+
+.nyheder {
+    grid-area: nyheder;
+}
+
+.top3 {
+    grid-area: top3;
+}
+
+footer {
+    grid-area: footer;
+}
+/* GRID AREA */
+
+/* GRID PAGEWRAP MOBILE */
+@media screen and (max-width: 768px) {
+    #pagewrap {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 2fr 1fr;
+    grid-template-areas: 
+        "header header header header"
+        "menu selvbetjening selvbetjening selvbetjening"
+        "nyheder nyheder nyheder nyheder"
+        "top3 top3 top3 top3"
+        "footer footer footer footer";
+    }
+}
+/* GRID PAGEWRAP MOBILE */
+
+
+/* BREAK POINT TABLET*/
+@media screen and (min-width: 768px) {
+    #pagewrap {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 3fr 2fr 1fr;
+        grid-template-areas: 
+            "header header header header"
+            "selvbetjening selvbetjening selvbetjening selvbetjening"
+            "menu menu menu menu"
+            "menuleft nyheder nyheder nyheder"
+            "menuleft top3 top3 top3"
+            "footer footer footer footer";
+    }
+    
+    /* DISPLAY ON */
+        .navigationleft {
+            display: block;
+            }
+    /* DISPLAY ON */
+}
+/* GRID OG BREAKPOINT FOR "PAGEWRAP" I TABLET */
+
+
+/* GRID OG BREAKPOINT FOR "PAGEWRAP" I DESKTOP */
+@media screen and (min-width: 1280px) {
+    #pagewrap {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr 4fr 3fr 1fr;
+        grid-template-areas: 
+            "header header header header"
+            "banner banner banner banner"
+            "selvbetjening selvbetjening selvbetjening selvbetjening"
+            "menu menu menu menu"
+            "menuleft nyheder nyheder nyheder"
+            "menuleft top3 top3 top3"
+            "footer footer footer footer";
+    }
+    
+    /* DISPLAY ON */
+        .banner {
+        display: block;
+            }
+
+    .navigationleft {
+        display: block;
+            }
+    /* DISPLAY ON */
+}
+
+/* GRID OG BREAKPOINT FOR "PAGEWRAP" I DESKTOP */

@@ -1,0 +1,520 @@
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1.1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;   
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:''; content:none;
+
+}
+/* END RESET */
+
+
+/* STYLING */
+body {
+    
+}
+
+#pagewrap {
+    margin: 0.2em;
+}
+
+.fordele {
+    grid-area: fordele;
+    padding-left: 1em;
+    width: 96.7%;
+    background-color: #212121;
+    margin-bottom: 0.2em;
+}
+
+.menu {
+    grid-area: menu;
+    width: 100%;
+}
+
+.menu p{
+    margin-top: -1em;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+#menu-button-text {
+    border-style: none;
+}
+
+.nav {
+    border-right: 1px solid black;
+    text-align: center;
+    height: 99px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 40px;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+#menu-button-text {
+    margin-top: -3.3em;
+    text-align: center;
+    font-size: 15px;
+}
+
+#toggle {
+    display: none;
+}
+
+.menupop {
+    background-color: white;
+    margin: 0 30px 0 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+.menupop img {
+    margin-top: -0.7em;
+}
+
+#toggle:checked + .menupop {
+    display: block;
+}
+
+.selvbetjening {
+    grid-area: selvbetjening;
+    width: 100%;
+    margin-left: 0.5em;
+}
+
+.betjeningimg {
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.img-text-selv {
+    margin-top: -1.1em;
+}
+
+.search {
+    grid-area: search;
+    padding-left: 0.3em;
+    padding-bottom: 0.3em;
+    margin-top: -0.2em;
+    width: 100%;
+}
+
+#searchbar {
+    width: 99%;
+    height: 50px;
+    background-color: lightgray;
+    text-decoration-color: white;
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.nyheder {
+    grid-area: nyheder;
+    width: 100%;
+}
+
+.top3 {
+    grid-area: top3;
+    padding-bottom: 0.5em;
+    padding-top: 0.3em;
+    width: 100%;
+}
+
+.team {
+    grid-area: team;
+    background-color: pink;
+    width: 100%;
+}
+
+.nyhedsbrev {
+    grid-area: nyhedsbrev;
+    background-color: gray;
+    width: 100%;
+}
+
+.information {
+    grid-area: support;
+    background-color: #212121;
+}
+
+/* FOOTER */
+.containernummer {
+    grid-area: nummertilos;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+#sporgsmal {
+    font-family: sans-serif;
+    color: #0CF62C;
+}
+
+#kontaktos {
+    font-family: sans-serif;
+    color: white;
+}
+
+.imgsocial {
+    max-width: 30%;
+    grid-area: socials;
+}
+
+.titelfooter {
+    font-family: sans-serif;
+    color: white;
+    padding-left: 0.9em;
+}
+
+.containersupport {
+    font-family: sans-serif;
+    font-size: 90%;
+    color: white;
+    list-style: none;
+    padding-left: 0.9em;
+}
+
+.containergisito {
+    font-family: sans-serif;
+    font-size: 90%;
+    color: white;
+    list-style: none; 
+    padding-left: 0.9em;
+}
+
+/* GRID AREAS FOR FOOTER */
+#support {
+    grid-area: supportfelt;
+}
+
+#gisito {
+    grid-area: gisito;
+}
+/* END FOOTER */
+/* STYLING */
+
+
+/* FONTS */
+
+/* END FONTS */
+
+
+/* IMAGES */
+/* FORDELE */
+#fragt {
+    grid-area: fragt;
+    max-width: 80%;
+}
+
+#bytteret {
+    grid-area: bytteret;
+    max-width: 80%;
+}
+
+#rating {
+    grid-area: rating;
+    margin-top: 0.3em;
+    max-width: 80%;
+}
+
+#produkt {
+    grid-area: produkt;
+    max-width: 80%;
+}
+
+/* END FORDELE */
+
+
+/* SELVBETJENING */
+#logo {
+    grid-area: logo;
+    max-width: 75%;
+}
+
+#gemt {
+    grid-area: gemt;
+    max-width: 100%;
+}
+
+#kurv {
+    grid-area: kurv;
+    max-width: 100%;
+}
+
+#konto {
+    grid-area: konto;
+    max-width: 100%;
+}
+
+/* NYHEDER */
+/* SLIDERS */
+.slidercontainer {
+    width: 100%;
+    height: 62vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.slider {
+    animation: cycleimages 24s infinite;
+}
+
+.slider:nth-child(1){
+    animation-delay: 0s;
+}
+
+.slider:nth-child(2){
+    animation-delay: 8s;
+}
+
+.slider:nth-child(3){
+    animation-delay: 16s;
+}
+
+@keyframes cycleimages {
+    85%{
+        opacity: 1;
+    }
+    
+    45%{
+        opacity: 0;
+    }
+}
+/* END NYHEDER */
+
+
+/* TOP 3 LISTER */
+.top3container {
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+    max-width: 100%;
+    background-color: #0BD45E;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+}
+
+.titeltop3 {
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 0.1em;
+}
+
+.imgtop3 {
+    max-width: 100%;
+    
+}
+
+.top3completes {
+    grid-area: completes;
+}
+
+.top3deck {
+    grid-area: deck;
+    
+}
+
+.top3bar {
+    grid-area: bar;
+}
+
+.top3hjul {
+    grid-area: hjul;
+}
+
+.top3beskytter {
+    grid-area: beskytter;
+}
+
+#top3beskyttercon {
+    padding-right: 0.6em;
+}
+
+#beskytter3 {
+    margin-top: 0.5em;
+    margin-bottom: -0.5em;
+}
+
+.top3hjelm {
+    grid-area: hjelm;
+}
+
+.top3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "completes deck"
+        "bar hjul"
+        "beskytter hjelm";
+}
+/* END TOP 3 LISTER */
+
+
+/* TEAM BANNER */
+#team {
+    max-width: 100%;
+}
+/*END TEAM BANNER */
+
+
+/* FOOTER */
+#ig {
+    margin-left: -4em;
+}
+
+#yt {
+    margin-left: -8em
+}
+/* END IMAGES og STYLING */
+
+
+/* NYHEDSBREV */
+.titelnyhedsbrev {
+    font-family: sans-serif;
+}
+
+#underrubriknyhedsbrev {
+    font-family: sans-serif;
+    font-size: 75%;
+}
+
+/* Style the form element with a border around it */
+form {
+  border: 4px solid #f1f1f1;
+}
+
+/* Add some padding and a grey background color to containers */
+.containerbrev {
+    padding-top: 20px;
+    padding-bottom: 0;
+    background-color: #f1f1f1;
+}
+
+.containersub {
+    background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+/* END NYHEDSBREV */
+
+
+/* MOBILE STYLES */
+#pagewrap {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-areas: 
+        "fordele fordele"
+        "menu selvbetjening"
+        "search search"
+        "nyheder nyheder"
+        "top3 top3"
+        "team team"
+        "nyhedsbrev nyhedsbrev"
+        "support support";
+}
+
+.fordele {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "fragt bytteret rating produkt";
+}
+
+.betjeningimg {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "logo konto gemt kurv";
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1.5fr 1fr;
+    grid-template-areas: 
+        "nummertilos nummertilos nummertilos nummertilos"
+        "supportfelt supportfelt gisito gisito"
+        "em em em socials";
+}
+/* END MOBILE STYLES */
+
+
+/* SMALL TABLET STYLES */
+@media screen and (min-width: 620px){
+
+}
+/* END SMALL TABLET STYLES */
+
+
+/* LARGE TABLET & DESKTOP STYLES */
+@media screen and (min-width: 960px){
+    
+}
+/* END LARGE TABLET & DESKTOP STYLES */
+
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 1280px){
+    
+}
+/* END DESKTOP STYLES */
+

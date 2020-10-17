@@ -45,6 +45,15 @@ body {
     margin-bottom: 0.2em;
 }
 
+/* MENU */
+.menudesktop {
+        display: none;;
+    }
+
+.menuleftdesktop {
+    display: none;
+}
+
 .menu {
     grid-area: menu;
     width: 100%;
@@ -100,6 +109,13 @@ label {
 #toggle:checked + .menupop {
     display: block;
 }
+
+
+/* MENU DESKTOP */
+
+
+/* END MENU DESKTOP */
+
 
 .selvbetjening {
     grid-area: selvbetjening;
@@ -257,7 +273,7 @@ label {
 /* SELVBETJENING */
 #logo {
     grid-area: logo;
-    max-width: 75%;
+    max-width: 70%;
 }
 
 #gemt {
@@ -315,6 +331,18 @@ label {
     45%{
         opacity: 0;
     }
+}
+
+#news1 {
+    max-width: 100%;
+}
+
+#news2 {
+    max-width: 100%;
+}
+
+#news3 {
+    max-width: 100%;
 }
 /* END NYHEDER */
 
@@ -404,6 +432,11 @@ label {
 
 #yt {
     margin-left: -8em
+}
+
+#em {
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
 /* END IMAGES og STYLING */
 
@@ -500,13 +533,224 @@ footer {
 
 /* SMALL TABLET STYLES */
 @media screen and (min-width: 620px){
+    #pagewrap {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-areas: 
+        "fordele fordele"
+        "menu selvbetjening"
+        "search search"
+        "nyheder nyheder"
+        "top3 top3"
+        "team team"
+        "nyhedsbrev nyhedsbrev"
+        "support support";
+}
+    
+/* IMAGES */
+/* HEADER IKONER */
+    .fordele {
+        padding-left: 3em;
+    }
+    
+    #fragt {
+        grid-area: fragt;
+        max-width: 60%;
+    }
 
+    #bytteret {
+        grid-area: bytteret;
+        max-width: 60%;
+    }
+
+    #rating {
+        grid-area: rating;
+        margin-top: 0.3em;
+        max-width: 60%;
+    }
+
+    #produkt {
+        grid-area: produkt;
+        max-width: 60%;
+    }
+    
+    
+/* BETJENING */
+    #logo {
+        grid-area: logo;
+        max-width: 50%; 
+    }
+
+    #gemt {
+        grid-area: gemt;
+        max-width: 100%;
+        margin-top: 0.5em;
+    }
+
+    #kurv {
+        grid-area: kurv;
+        max-width: 100%;
+        margin-top: 0.5em;
+    }
+
+    #konto {
+        grid-area: konto;
+        max-width: 100%;
+        margin-top: 0.5em;
+    }
+    
+/* NYHEDER */ 
+    .slidercontainer {
+        height: 100vh;
+    }
+    
+    #news1 {
+        max-width: 100%;
+    }
+
+    #news2 {
+        max-width: 100%;
+    }
+
+    #news3 {
+        max-width: 100%;
+    }
 }
 /* END SMALL TABLET STYLES */
 
 
 /* LARGE TABLET & DESKTOP STYLES */
 @media screen and (min-width: 960px){
+    #pagewrap {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+            "fordele fordele fordele"
+            "selvbetjening selvbetjening selvbetjening"
+            "search search search"
+            "menudesktop menudesktop menudesktop"
+            "menuleft nyheder nyheder"
+            "menuleft top3 top3"
+            "menuleft team team"
+            "menuleft nyhedsbrev nyhedsbrev"
+            "support support support";
+    }
+
+/* FORDELE */
+    .fordele {
+        padding-left: 7em;  
+        }
+
+    #fragt {
+        max-width: 35%;
+    }
+
+    #bytteret {
+        max-width: 30%;
+    }
+
+    #rating {
+        margin-top: 0.2em;
+        max-width: 35%;
+    }
+
+    #produkt {
+        max-width: 30%;
+    }
+    
+    
+/* MENU DESKTOP */
+    .menu {
+        display: none;
+    }
+    
+    .menudesktop {
+        grid-area: menudesktop;
+        display: block;
+        background-color: deepskyblue;
+        width: 100%;
+    }
+    
+    .menudesktopcontainer {
+        list-style: none;
+        display: inline-flex;
+        width: 100%;
+    }
+    
+    .itemmenudekstop {
+        max-width: 50%;
+    }
+    
+    #completesdesktop {
+        max-width: 60%;
+    }
+    
+    #deledesktop {
+        max-width: 60%;
+    }
+    
+    #beskyttelsedesktop {
+        max-width: 60%;
+    }
+    
+    #appareldesktop {
+        max-width: 60%;
+    }
+    
+    #rampedesktop {
+        max-width: 60%;
+    }
+    
+    
+/* MENULEFT DESKTOP */
+    .menuleftdesktop {
+        grid-area: menuleft;
+        display:block;
+        background-color: deepskyblue;
+        height: 100%;
+    }
+    
+    .menuleftcontain {
+        list-style: none;
+        height: 100%;
+    }
+
+
+/* BETJENING */ 
+    #logo {
+        grid-area: logo;
+        max-width: 40%; 
+    }
+
+    #gemt {
+        grid-area: gemt;
+        width: 100%;
+        margin-top: 4em;
+    }
+
+    #kurv {
+        grid-area: kurv;
+        width: 100%;
+        margin-top: 4em;
+    }
+
+    #konto {
+        grid-area: konto;
+        width: 100%;
+        margin-top: 4em;
+    }
+
+    
+/* NYHEDER */
+    .nyheder {
+        margin-left: 3em;
+    }
+    
+/* TEAMET BAG */
+    #team {
+        width: 100%;
+    }
+
     
 }
 /* END LARGE TABLET & DESKTOP STYLES */

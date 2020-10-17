@@ -9,13 +9,13 @@
 <body>
     <div id="pagewrap">
         <header class="fordele">
-            <img src="ikoner/ikon1whitegray-09.svg" id="fragt" >
-            <img src="ikoner/ikon3whitegray-11.svg" id="bytteret" >
+            <img src="ikoner/ikon3whitegray-11.svg" id="fragt" >
+            <img src="ikoner/ikon1whitegray-09.svg" id="bytteret" >
             <img src="ikoner/ikon2whitegray-10.svg" id="rating" >
             <img src="ikoner/stjerner-12.svg" id="produkt" >
         </header>
     
-        <nav class="menu">
+        <nav class="menu"> 
             <div class="nav">
                 <label for="toggle">&#9776; <p id="menu-button-text">menu</p></label>
                 <input type="checkbox" id="toggle"/>
@@ -34,26 +34,47 @@
                 
             </div>
         </nav>
+        
+        <nav class="menudesktop">
+            <ul class="menudesktopcontainer">
+                <li class="itemmenudekstop"><img src="ikoner/komplete-04.svg" id="completesdesktop">Komplete Løbehjul</li>
+                <li class="itemmenudekstop"><img src="ikoner/dele_Artboard%206.svg" id="deledesktop">Dele</li>
+                <li class="itemmenudekstop"><img src="ikoner/beskyttelse-07.svg" id="beskyttelsedesktop">Beskyttelse</li>
+                <li class="itemmenudekstop"><img src="ikoner/apparel-05.svg" id="appareldesktop">Apparel</li>
+                <li class="itemmenudekstop"><img src="ikoner/rampe-08.svg" id="rampedesktop">Ramper og Rails</li>
+            </ul>
+        </nav> <!-- MENU FOR DESKTOP -->
+        
+        <nav class="menuleftdesktop">
+            <ul class="menuleftcontain">
+                <li>Komplete Løbehjul</li>
+                <li>Dele</li>
+                <li>Beskyttelse</li>
+                <li>Apparel</li>
+                <li>Ramper og Rails</li>
+            </ul>
+        </nav> <!-- MENU TIL VENSTRE FOR DESKTOP -->
+    
     
         <section class="selvbetjening">
             <ul class="betjeningimg">
                 <li id="logo"><img src="ikoner/LOGO.svg"></li>
-                <li id="gemt"><img src="ikoner/gemt3-02.svg" width="60" height="60"><p class="img-text-selv">Gemt</p></li>
-                <li id="kurv"><img src="ikoner/kurv3-03.svg" width="60" height="60"><p class="img-text-selv">Kurv</p></li>
-                <li id="konto"><img src="ikoner/konto3-01.svg" width="60" height="60"><p class="img-text-selv">Konto</p></li>
+                <li id="gemt" class="ikonerfordesk"><img src="ikoner/gemt3-02.svg" width="60" height="60"><p class="img-text-selv">Gemt</p></li>
+                <li id="kurv" class="ikonerfordesk"><img src="ikoner/kurv3-03.svg" width="60" height="60"><p class="img-text-selv">Kurv</p></li>
+                <li id="konto" class="ikonerfordesk"><img src="ikoner/konto3-01.svg" width="60" height="60"><p class="img-text-selv">Konto</p></li>
             </ul>
-            
         </section>
     
         <nav class="search">
             <input type="text" placeholder="Søg efter produkter eller brands..." id="searchbar">
         </nav>
+        
     
         <section class="nyheder">
             <ul class="slidercontainer">
-                <li class="slider"><img src="produktbilleder/bignews-codyflomdele.png" id="news1"></li>
-                <li class="slider"><img src="produktbilleder/bignews-envyprodigy.jpg.png" id="news2"></li>
-                <li class="slider"><img src="produktbilleder/bignews-maddtilbud.png" id="news3"></li>
+                <li class="slider"><img src="produktbilleder/bignews-codyflomdele-tabletmini.jpg" id="news1"></li>
+                <li class="slider"><img src="produktbilleder/bignews-envyprodigy-tabletmini.jpg" id="news2"></li>
+                <li class="slider"><img src="produktbilleder/bignews-maddtilbud-tabletmini.jpg" id="news3"></li>
             </ul>
         </section>
     

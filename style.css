@@ -165,9 +165,13 @@ label {
     width: 100%;
 }
 
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
 .team {
     grid-area: team;
-    background-color: pink;
     width: 100%;
 }
 
@@ -308,7 +312,7 @@ label {
 }
 
 .slider {
-    animation: cycleimages 24s infinite;
+    animation: cycleimages 21s infinite;
 }
 
 .slider:nth-child(1){
@@ -316,11 +320,11 @@ label {
 }
 
 .slider:nth-child(2){
-    animation-delay: 8s;
+    animation-delay: 7s;
 }
 
 .slider:nth-child(3){
-    animation-delay: 16s;
+    animation-delay: 14s;
 }
 
 @keyframes cycleimages {
@@ -328,7 +332,7 @@ label {
         opacity: 1;
     }
     
-    45%{
+    50%{
         opacity: 0;
     }
 }
@@ -667,38 +671,74 @@ footer {
     .menudesktop {
         grid-area: menudesktop;
         display: block;
-        background-color: deepskyblue;
         width: 100%;
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        border-left: 0;
+        border-right: 0;
     }
     
     .menudesktopcontainer {
         list-style: none;
-        display: inline-flex;
         width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+            "completetop deletop beskyttelsetop appareltop rampetop";
+        
+    }
+    
+    .menudesktopcontainer p {
+        margin-top: -1em;
+        margin-bottom: 1em;
     }
     
     .itemmenudekstop {
-        max-width: 50%;
+        max-width: 100%;
     }
     
+    #item1top {
+        grid-area: completetop;
+    }
+    
+    #item2top {
+        grid-area: deletop;
+    }
+    
+    #item3top {
+        grid-area: beskyttelsetop;
+    }
+    
+    #item4top {
+        grid-area: appareltop;
+    }
+    
+    #item5top {
+        grid-area: rampetop;
+    }
+    
+    
+    
     #completesdesktop {
-        max-width: 60%;
+        max-width: 30%;
     }
     
     #deledesktop {
-        max-width: 60%;
+        max-width: 30%;
     }
     
     #beskyttelsedesktop {
-        max-width: 60%;
+        max-width: 30%;
     }
     
     #appareldesktop {
-        max-width: 60%;
+        max-width: 30%;
     }
     
     #rampedesktop {
-        max-width: 60%;
+        max-width: 30%;
     }
     
     
@@ -706,15 +746,44 @@ footer {
     .menuleftdesktop {
         grid-area: menuleft;
         display:block;
-        background-color: deepskyblue;
         height: 100%;
+        margin-top: 1em;
+        padding-left: 1em;
+        display: grid;
+        grid-template-rows: repeat(5, 0.1fr);
+        grid-template-areas: 
+            "kompleteleft"
+            "deleleft"
+            "beskyttelseleft"
+            "apparelleft"
+            "ramperleft";
     }
     
     .menuleftcontain {
         list-style: none;
-        height: 100%;
     }
-
+    
+    #kompletemenuleft {
+        list-style: none;
+        grid-area: kompleteleft;
+        
+    }
+    #delemenuleft {
+        list-style: none;
+        grid-area: deleleft;
+    }
+    #beskyttelsemenuleft {
+        list-style: none;
+        grid-area: beskyttelseleft;
+    }
+    #apparelmenuleft {
+        list-style: none;
+        grid-area: apparelleft;
+    }
+    #rampermenuleft {
+        list-style: none;
+        grid-area: ramperleft;
+    }
 
 /* BETJENING */ 
     #logo {
@@ -740,11 +809,19 @@ footer {
         margin-top: 4em;
     }
 
-    
+
 /* NYHEDER */
     .nyheder {
-        margin-left: 3em;
+        padding-top: 1em;
     }
+    
+    
+    
+/* TOP 3 LISTER */
+    .top3 {
+        padding-top: 3em;
+    }
+    
     
 /* TEAMET BAG */
     #team {
@@ -759,6 +836,34 @@ footer {
 /* DESKTOP STYLES */
 @media screen and (min-width: 1280px){
     
+    
+    /* MENU TOP */
+    #completesdesktop {
+        max-width: 25%;
+    }
+    
+    #deledesktop {
+        max-width: 25%;
+    }
+    
+    #beskyttelsedesktop {
+        max-width: 25%;
+    }
+    
+    #appareldesktop {
+        max-width: 25%;
+    }
+    
+    #rampedesktop {
+        max-width: 25%;
+    }
+    
+    
+    /* NYHEDER */
+    .nyheder {
+        padding-top: 1em;
+        padding-left: 4em;
+    }
 }
 /* END DESKTOP STYLES */
 

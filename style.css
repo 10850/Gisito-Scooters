@@ -153,9 +153,9 @@ label {
     border-color: black;
 }
 
-.nyheder {
-    grid-area: nyheder;
+#carouselExampleIndicators {
     width: 100%;
+    grid-area: nyheder;
 }
 
 .top3 {
@@ -166,6 +166,11 @@ label {
 }
 
 a {
+    text-decoration-line: none;
+    color: black;
+}
+
+a:hover {
     text-decoration-line: none;
     color: black;
 }
